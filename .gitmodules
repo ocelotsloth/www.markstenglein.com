@@ -1,0 +1,3 @@
+[submodule "themes/hugo-ocelotsloth"]
+	path = themes/hugo-ocelotsloth
+	url = git@github.com:ocelotsloth/hugo-ocelotsloth.git
