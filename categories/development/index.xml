@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on A minimal Hugo website</title>
+    <link>https://www.stengleinprojects.com/categories/development/</link>
+    <description>Recent content in Development on A minimal Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.stengleinprojects.com/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Use docker to tunnel insecure api calls over the internet.</title>
+      <link>https://www.stengleinprojects.com/post/2018/01/06/use-docker-to-tunnel-insecure-api-calls-over-the-internet./</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.stengleinprojects.com/post/2018/01/06/use-docker-to-tunnel-insecure-api-calls-over-the-internet./</guid>
+      <description>The school I work for just migrated our Powerschool server offsite, introducing an issue for our internal applications which relied on the ODBC API to pull the class schedules for each day. Because the API does not employ encryption, simply opening the port on the remote server was not an option.
+SSH provides the ability to tunnel network traffic through an encrypted SSH session. By binding this tunnel to the internal computer’s network interface, any other computer can simply connect to the proxy host.</description>
+    </item>
+    
+    <item>
+      <title>Ultra-Disposable Testing Environments With Docker</title>
+      <link>https://www.stengleinprojects.com/post/2017/12/18/ultra-disposable-testing-environments-with-docker/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.stengleinprojects.com/post/2017/12/18/ultra-disposable-testing-environments-with-docker/</guid>
+      <description>Often times I find myself wanting to try out some piece of software from Github, a tutorial, or just have a fresh environment to work in that will avoid causing damage to my computer’s local environment. Typically I would use Vagrant to spin up a virtual machine, and delete it after. This is a time consuming and tedious process.
+Docker provides a convienent method which gives you a clean environment that is destroyed when you finish with it.</description>
+    </item>
+    
+    <item>
+      <title>How to Create SharePoint Popups for New Item Forms</title>
+      <link>https://www.stengleinprojects.com/post/2016/07/11/how-to-create-sharepoint-popups-for-new-item-forms/</link>
+      <pubDate>Mon, 11 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.stengleinprojects.com/post/2016/07/11/how-to-create-sharepoint-popups-for-new-item-forms/</guid>
+      <description>By using modal popups instead of linking directly to the new item forms for a list, you can save the end user the frustration of having to go back and figure out where they were before they decided to click the link to add the item to the list, while also giving a much more polished look to the site in general.
+Adding the button element While you can apply this method to direct links, it looks nicer if you create a button for the user to interact with, so put some place holder text where you want the button to go and then open the site in SharePoint Designer 2013.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Systems Administration on A minimal Hugo website</title>
+    <link>https://www.stengleinprojects.com/categories/systems-administration/</link>
+    <description>Recent content in Systems Administration on A minimal Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.stengleinprojects.com/categories/systems-administration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Use docker to tunnel insecure api calls over the internet.</title>
+      <link>https://www.stengleinprojects.com/post/2018/01/06/use-docker-to-tunnel-insecure-api-calls-over-the-internet./</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.stengleinprojects.com/post/2018/01/06/use-docker-to-tunnel-insecure-api-calls-over-the-internet./</guid>
+      <description>The school I work for just migrated our Powerschool server offsite, introducing an issue for our internal applications which relied on the ODBC API to pull the class schedules for each day. Because the API does not employ encryption, simply opening the port on the remote server was not an option.
+SSH provides the ability to tunnel network traffic through an encrypted SSH session. By binding this tunnel to the internal computer’s network interface, any other computer can simply connect to the proxy host.</description>
+    </item>
+    
+  </channel>
+</rss>

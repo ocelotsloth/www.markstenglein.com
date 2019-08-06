@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ultra-Disposable Testing Environments With Docker | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Ultra-Disposable Testing Environments With Docker</span></h1>
+<h2 class="author">Mark Stenglein</h2>
+<h2 class="date">2017/12/18</h2>
+</div>
+
+<main>
+<p>Often times I find myself wanting to try out some piece of software from Github, a tutorial, or just have a fresh environment to work in that will avoid causing damage to my computer’s local environment. Typically I would use Vagrant to spin up a virtual machine, and delete it after. This is a time consuming and tedious process.</p>
+
+<p>Docker provides a convienent method which gives you a clean environment that is destroyed when you finish with it.</p>
+
+<p>First, <a href="https://docs.docker.com/engine/installation/">install Docker</a>. If you run Ubuntu 17.10, you will likely need to use either the Edge or Xenial PPA. As of when I’m writing this, Docker has not been officially released for 17.10.</p>
+
+<p>Next, download the image you want to run:</p>
+
+<pre><code class="language-bash">docker pull ubuntu:latest
+</code></pre>
+
+<p>For conviencence, you can optionally add the following to your <code>.bashrc</code> file:</p>
+
+<pre><code class="language-bash">alias ubuntu='docker run -it ubuntu:latest /bin/bash'
+</code></pre>
+
+<p>After logging out and in to get the new bashrc (or just <code>source</code> the config), you should be able to run <code>ubuntu</code> and be greeted with a prompt.</p>
+
+<figure>
+    <img src="/img/docker-disposable-env/docker-env.png"/> 
+</figure>
+
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  &copy; <a href="https://www.stengleinprojects.com">Mark Stenglein</a> 2016 &ndash; 2019 | <a href="https://github.com/ocelotsloth">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Use docker to tunnel insecure api calls over the internet. | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Use docker to tunnel insecure api calls over the internet.</span></h1>
+<h2 class="author">Mark Stenglein</h2>
+<h2 class="date">2018/01/06</h2>
+</div>
+
+<main>
+
+
+<p>The school I work for just migrated our Powerschool server offsite, introducing an issue for our internal applications which relied on the ODBC API to pull the class schedules for each day. Because the API does not employ encryption, simply opening the port on the remote server was not an option.</p>
+
+<p>SSH provides the ability to tunnel network traffic through an encrypted SSH session. By binding this tunnel to the internal computer’s network interface, any other computer can simply connect to the proxy host. The tunnel presents the remote ports transparently to our application.</p>
+
+<p>For simple experimentation, the following command can be used:</p>
+
+<pre><code class="language-bash">ssh $REMOTE_URL \
+    -l $SSH_USER \
+    -L 0.0.0.0:$REMOTE_PROXY_PORT:$REMOTE_HOST:$LOCAL_PROXY_PORT
+</code></pre>
+
+<p>For the remote host and port, you can specify any computer accessable from the remote server you are connecting to over SSH. In the simplest case, this would simply be localhost, but for more complicated situations you can specify other hostnames or ip addresses. Since Powerschool runs on Windows Server, my use case required me to tunnel through a linux host to the Powerschool server.</p>
+
+<h2 id="docker-makes-things-better">Docker Makes Things Better</h2>
+
+<p>Manually opening an ssh tunnel is really quite annoying. Wrapping this function into a docker container allows for error recovery as well as simpler configuration. For this reason, I wrote a docker image which accomplishes this task. Find it at <a href="https://github.com/ocelotsloth/docker-ssh-tunnel">https://github.com/ocelotsloth/docker-ssh-tunnel</a>.</p>
+
+<p>The easiest way to use this is by creating a docker-compose file which orchestrates this with your other applications. This is especially useful if your other applications are run through docker, as you can get away with only exposing the tunneled port to the internal docker network.</p>
+
+<p>Here is what that docker-compose file could look like:</p>
+
+<pre><code class="language-yaml"># docker-compose.yml
+version: '2'
+services:
+  proxy:
+    image: 'ocelotsloth/ssh-tunnel:v0.1.0'
+    environment:
+      - SSH_PASS=${PROXY_SSH_PASS}
+      - SSH_URL=${PROXY_SSH_URL}
+      - SSH_PORT=${PROXY_SSH_PORT}
+      - SSH_USER=${PROXY_SSH_USER}
+      - REMOTE_PROXY_PORT=${PROXY_REMOTE_PROXY_PORT}
+      - REMOTE_HOST=${PROXY_REMOTE_HOST}
+      - LOCAL_PROXY_PORT=${PROXY_LOCAL_PROXY_PORT}
+    expose:
+      - &quot;${PROXY_LOCAL_PROXY_PORT}:${PROXY_LOCAL_PROXY_PORT}&quot;
+    ports:
+      - &quot;${PROXY_LOCAL_PROXY_PORT}:${PROXY_LOCAL_PROXY_PORT}&quot;
+    restart: always
+</code></pre>
+
+<p>With this file, a simple <code>docker-compose up -d</code> would bring up the proxy and configure it to restart (the same way enabling a systemd unit works). You will need the following <code>.env</code> file in the same directory as the docker-compose file to pass the configuration values. Alternatively you could just enter them directly.</p>
+
+<pre><code class="language-bash">PROXY_SSH_PASS=
+PROXY_SSH_URL=
+PROXY_SSH_PORT=
+PROXY_SSH_USER=
+PROXY_REMOTE_PROXY_PORT=
+PROXY_REMOTE_HOST=
+PROXY_LOCAL_PROXY_PORT=
+</code></pre>
+
+<p>Admittedly this has a limited use case, but still useful in just the right circumstances.</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  &copy; <a href="https://www.stengleinprojects.com">Mark Stenglein</a> 2016 &ndash; 2019 | <a href="https://github.com/ocelotsloth">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

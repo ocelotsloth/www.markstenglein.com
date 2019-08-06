@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/categories/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/categories/development/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/docker/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/post/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/programming/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/ssh/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/categories/systems-administration/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/post/2018/01/06/use-docker-to-tunnel-insecure-api-calls-over-the-internet./</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/post/2017/12/18/ultra-disposable-testing-environments-with-docker/</loc>
+    <lastmod>2017-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/html/</loc>
+    <lastmod>2016-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/post/2016/07/11/how-to-create-sharepoint-popups-for-new-item-forms/</loc>
+    <lastmod>2016-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/javascript/</loc>
+    <lastmod>2016-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/microsoft/</loc>
+    <lastmod>2016-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/sharepoint/</loc>
+    <lastmod>2016-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/xhtml/</loc>
+    <lastmod>2016-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/post/2016/06/22/a-visit-to-nasa-larcs-hanger/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/aviation/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/hanger/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/nasa/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/categories/photography/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/arduino/</loc>
+    <lastmod>2016-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/categories/diy/</loc>
+    <lastmod>2016-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/diy/</loc>
+    <lastmod>2016-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/post/2016/05/11/diy-musical-floppy-drives/</loc>
+    <lastmod>2016-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/floppy-drives/</loc>
+    <lastmod>2016-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/midi/</loc>
+    <lastmod>2016-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/tags/music/</loc>
+    <lastmod>2016-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/categories/projects/</loc>
+    <lastmod>2016-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/post/2016/05/09/diy-laser-engraver-for-80-usd/</loc>
+    <lastmod>2016-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stengleinprojects.com/about/</loc>
+  </url>
+  
+</urlset>
