@@ -2,7 +2,7 @@
 title: Home
 ---
 
-<img src="/img/avatar.jpg" style="max-width:30%;min-width:40px;float:right;margin-left:5px;" alt="Github repo" />
+<img src="/img/avatar.jpg" style="max-width:30%;min-width:40px;float:right;margin-left:5px;" alt="My face" />
 
 # Mark Stenglein
 
@@ -15,4 +15,3 @@ As an IT Specialist I have been responsible for developing, maintaining, and ite
 Since 2017 I have worked with [Joshua Cruse Media LLC](https://joshuacrusemedia.com) on various projects for several of George Mason University's [Green Machine Ensembles](https://www.greenmachine.gmu.edu) as well as the Lynchburg Symphony Orchestra. As a sound engineer I have been responsible for for live and recorded productions for the Boy Scouts of America's Colonial Virginia Council, George Mason University's  Green Machine Pep Band, Bishop O'Connell High School, and Joshua Cruse Media LLC.
 
 <hr/>
-
