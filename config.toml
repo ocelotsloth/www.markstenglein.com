@@ -1,6 +1,6 @@
 baseurl = "https://www.stengleinprojects.com"
 languageCode = "en-us"
-title = "A minimal Hugo website"
+title = "Stenglein Projects"
 theme = "hugo-ocelotsloth"
 googleAnalytics = ""
 disqusShortname = ""
