@@ -1,4 +1,4 @@
-baseurl = "https://www.stengleinprojects.com"
+baseurl = "https://www.markstenglein.com"
 languageCode = "en-us"
 title = "Stenglein Projects"
 theme = "hugo-ocelotsloth"
@@ -28,5 +28,5 @@ footnotereturnlinkcontents = "↩"
     url = "/index.xml"
 
 [params]
-    description = "A website built through Hugo and blogdown."
-    footer = "&copy; [Mark Stenglein](https://www.stengleinprojects.com) 2016 -- 2019 | [Github](https://github.com/ocelotsloth) | [Unsplash](https://unsplash.com/ocelotsloth)"
+    description = "Mark Stenglein's home on the internet."
+    footer = "&copy; [Mark Stenglein](https://www.markstenglein.com) 2016 -- 2019 | [Github](https://github.com/ocelotsloth) | [Unsplash](https://unsplash.com/ocelotsloth)"
