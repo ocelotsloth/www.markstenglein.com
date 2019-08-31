@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Stenglein Projects</title>
-    <link>https://www.stengleinprojects.com/categories/</link>
+    <link>https://www.markstenglein.com/categories/</link>
     <description>Recent content in Categories on Stenglein Projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.stengleinprojects.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.markstenglein.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>https://www.stengleinprojects.com/categories/development/</link>
+      <link>https://www.markstenglein.com/categories/development/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.stengleinprojects.com/categories/development/</guid>
+      <guid>https://www.markstenglein.com/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Systems Administration</title>
-      <link>https://www.stengleinprojects.com/categories/systems-administration/</link>
+      <link>https://www.markstenglein.com/categories/systems-administration/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.stengleinprojects.com/categories/systems-administration/</guid>
+      <guid>https://www.markstenglein.com/categories/systems-administration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Photography</title>
-      <link>https://www.stengleinprojects.com/categories/photography/</link>
+      <link>https://www.markstenglein.com/categories/photography/</link>
       <pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.stengleinprojects.com/categories/photography/</guid>
+      <guid>https://www.markstenglein.com/categories/photography/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DIY</title>
-      <link>https://www.stengleinprojects.com/categories/diy/</link>
+      <link>https://www.markstenglein.com/categories/diy/</link>
       <pubDate>Wed, 11 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.stengleinprojects.com/categories/diy/</guid>
+      <guid>https://www.markstenglein.com/categories/diy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://www.stengleinprojects.com/categories/projects/</link>
+      <link>https://www.markstenglein.com/categories/projects/</link>
       <pubDate>Wed, 11 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.stengleinprojects.com/categories/projects/</guid>
+      <guid>https://www.markstenglein.com/categories/projects/</guid>
       <description></description>
     </item>
     

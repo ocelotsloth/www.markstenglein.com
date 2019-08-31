@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on Stenglein Projects</title>
-    <link>https://www.stengleinprojects.com/tags/javascript/</link>
+    <link>https://www.markstenglein.com/tags/javascript/</link>
     <description>Recent content in JavaScript on Stenglein Projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Jul 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.stengleinprojects.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.markstenglein.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Create SharePoint Popups for New Item Forms</title>
-      <link>https://www.stengleinprojects.com/post/2016/07/11/how-to-create-sharepoint-popups-for-new-item-forms/</link>
+      <link>https://www.markstenglein.com/post/2016/07/11/how-to-create-sharepoint-popups-for-new-item-forms/</link>
       <pubDate>Mon, 11 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.stengleinprojects.com/post/2016/07/11/how-to-create-sharepoint-popups-for-new-item-forms/</guid>
+      <guid>https://www.markstenglein.com/post/2016/07/11/how-to-create-sharepoint-popups-for-new-item-forms/</guid>
       <description>By using modal popups instead of linking directly to the new item forms for a list, you can save the end user the frustration of having to go back and figure out where they were before they decided to click the link to add the item to the list, while also giving a much more polished look to the site in general.
 Adding the button element While you can apply this method to direct links, it looks nicer if you create a button for the user to interact with, so put some place holder text where you want the button to go and then open the site in SharePoint Designer 2013.</description>
     </item>
