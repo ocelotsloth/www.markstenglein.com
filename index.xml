@@ -6,10 +6,20 @@
     <description>Recent content in Home on Stenglein Projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.markstenglein.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Recruitment video for GMU&#39;s Green Machine.</title>
+      <link>https://www.markstenglein.com/post/2019/08/28/recruitment-video-for-gmus-green-machine./</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.markstenglein.com/post/2019/08/28/recruitment-video-for-gmus-green-machine./</guid>
+      <description>August 19th through 23rd I spent the week with JC Media and Doc Nix and The Green Machine filming their 2019 Band Camp. After the new student convocation (where they welcome the incoming freshman class) I started the process of editing the footage into the following recruitment video:
+Band Camp 2019: WelcomeToday is the first rehearsal of the semester and we&amp;#039;re excited for some mid-week music making! Come check out our rehearsal in Dewberry Hall at 7:20pm, and don’t forget your instrument!</description>
+    </item>
     
     <item>
       <title>Use docker to tunnel insecure api calls over the internet.</title>
