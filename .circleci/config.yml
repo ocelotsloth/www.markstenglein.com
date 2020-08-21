@@ -12,7 +12,7 @@ jobs:
     steps:
 
       # install git
-      - run: apk update && apk add git
+      - run: sudo apt-get update && sudo apt-get install git
 
       # checkout the repository
       - checkout
