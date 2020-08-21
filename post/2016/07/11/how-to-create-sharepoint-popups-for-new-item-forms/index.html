@@ -32,59 +32,46 @@
 </div>
 
 <main>
-
-
 <p>By using modal popups instead of linking directly to the new item forms for a list, you can save the end user the frustration of having to go back and figure out where they were before they decided to click the link to add the item to the list, while also giving a much more polished look to the site in general.</p>
-
 <h2 id="adding-the-button-element">Adding the button element</h2>
-
 <p>While you can apply this method to direct links, it looks nicer if you create a button for the user to interact with, so put some place holder text where you want the button to go and then open the site in <a href="http://www.microsoft.com/en-us/download/details.aspx?id=35491">SharePoint Designer 2013</a>.</p>
-
 <p>Look for the placehoder text you created and replace it with the following:</p>
-
-<pre><code class="language-html">&lt;input id=&quot;btnSubmitIssue&quot; type=&quot;button&quot; value=&quot;Submit an Issue&quot; /&gt;
-</code></pre>
-
-<ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btnSubmitIssue&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Submit an Issue&#34;</span> /&gt;
+</code></pre></div><ul>
 <li><code>id</code>
-
 <ul>
 <li>The <code>id</code> of the button is going to be used later to reference this DOM item with javascript code. Make it whatever you want but make it descriptive to what it’s function is.</li>
-</ul></li>
+</ul>
+</li>
 <li><code>type</code>
-
 <ul>
 <li>The <code>type</code> is going to remain as button because that’s what we want to render.</li>
-</ul></li>
+</ul>
+</li>
 <li><code>value</code>
-
 <ul>
 <li>This text is going to be what is written on the button itself, and is the only thing the user will also be able to see.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="adding-the-javascript">Adding the JavaScript</h2>
-
 <p>The javascript is where all the action really happens here, and you will need to add an HTML Script Editor web part in order to get this working. It doesn’t matter where on the page it goes, just that it is there. Put this code inside of the script editor web part:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#75715e">// Replace ‘btnSubmitIssue’ with whatever the ‘id’ of the button you placed is
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">btnSubmitIssue</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;btnSubmitIssue&#39;</span>);
 
-<pre><code class="language-javascript">&lt;script type=&quot;text/javascript&quot;&gt;
-    // Replace ‘btnSubmitIssue’ with whatever the ‘id’ of the button you placed is
-    var btnSubmitIssue = document.getElementById('btnSubmitIssue');
-
-    function submitIssue() {
-        SP.UI.ModalDialog.showModalDialog({
-            // Replace ‘ESB%20Process%Issue’ with the URL encoded name of any list
-            url:   '../Lists/ESB%20Process%20Issue/NewForm.aspx',
-            // Replace ‘Submit an Issue’ with whatever you want the title of the popup to be
-            title: 'Submit an Issue'
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">submitIssue</span>() {
+        <span style="color:#a6e22e">SP</span>.<span style="color:#a6e22e">UI</span>.<span style="color:#a6e22e">ModalDialog</span>.<span style="color:#a6e22e">showModalDialog</span>({
+            <span style="color:#75715e">// Replace ‘ESB%20Process%Issue’ with the URL encoded name of any list
+</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span>   <span style="color:#e6db74">&#39;../Lists/ESB%20Process%20Issue/NewForm.aspx&#39;</span>,
+            <span style="color:#75715e">// Replace ‘Submit an Issue’ with whatever you want the title of the popup to be
+</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Submit an Issue&#39;</span>
         });
-        return false;
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
     }
-    btnSubmitIssue.onclick = submitIssue;
-&lt;/script&gt;
-</code></pre>
-
-<p>That code is pretty simple, and all you will need to do is replace the items noted in the comments with the specific elements that you actually want on the popup. It is possible to place other items in the url field, but this tutorial is focused specifically on new item forms for lists. Feel free to experiment with the limits of what SharePoint can place inside of there.</p>
+    <span style="color:#a6e22e">btnSubmitIssue</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">submitIssue</span>;
+<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
+</code></pre></div><p>That code is pretty simple, and all you will need to do is replace the items noted in the comments with the specific elements that you actually want on the popup. It is possible to place other items in the url field, but this tutorial is focused specifically on new item forms for lists. Feel free to experiment with the limits of what SharePoint can place inside of there.</p>
 
 </main>
 
@@ -92,7 +79,7 @@
   
   
   <hr/>
-  &copy; <a href="https://www.markstenglein.com">Mark Stenglein</a> 2016 &ndash; 2019 | <a href="https://github.com/ocelotsloth">Github</a> | <a href="https://unsplash.com/ocelotsloth">Unsplash</a>
+  © <a href="https://www.markstenglein.com">Mark Stenglein</a> 2016 &ndash; 2020 | <a href="https://github.com/ocelotsloth">Github</a> | <a href="https://unsplash.com/ocelotsloth">Unsplash</a>
   
   </footer>
   </body>

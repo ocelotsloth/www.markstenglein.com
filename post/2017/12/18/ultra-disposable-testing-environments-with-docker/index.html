@@ -33,23 +33,13 @@
 
 <main>
 <p>Often times I find myself wanting to try out some piece of software from Github, a tutorial, or just have a fresh environment to work in that will avoid causing damage to my computer’s local environment. Typically I would use Vagrant to spin up a virtual machine, and delete it after. This is a time consuming and tedious process.</p>
-
 <p>Docker provides a convienent method which gives you a clean environment that is destroyed when you finish with it.</p>
-
 <p>First, <a href="https://docs.docker.com/engine/installation/">install Docker</a>. If you run Ubuntu 17.10, you will likely need to use either the Edge or Xenial PPA. As of when I’m writing this, Docker has not been officially released for 17.10.</p>
-
 <p>Next, download the image you want to run:</p>
-
-<pre><code class="language-bash">docker pull ubuntu:latest
-</code></pre>
-
-<p>For conviencence, you can optionally add the following to your <code>.bashrc</code> file:</p>
-
-<pre><code class="language-bash">alias ubuntu='docker run -it ubuntu:latest /bin/bash'
-</code></pre>
-
-<p>After logging out and in to get the new bashrc (or just <code>source</code> the config), you should be able to run <code>ubuntu</code> and be greeted with a prompt.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker pull ubuntu:latest
+</code></pre></div><p>For conviencence, you can optionally add the following to your <code>.bashrc</code> file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias ubuntu<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;docker run -it ubuntu:latest /bin/bash&#39;</span>
+</code></pre></div><p>After logging out and in to get the new bashrc (or just <code>source</code> the config), you should be able to run <code>ubuntu</code> and be greeted with a prompt.</p>
 <figure>
     <img src="/img/docker-disposable-env/docker-env.png"/> 
 </figure>
@@ -61,7 +51,7 @@
   
   
   <hr/>
-  &copy; <a href="https://www.markstenglein.com">Mark Stenglein</a> 2016 &ndash; 2019 | <a href="https://github.com/ocelotsloth">Github</a> | <a href="https://unsplash.com/ocelotsloth">Unsplash</a>
+  © <a href="https://www.markstenglein.com">Mark Stenglein</a> 2016 &ndash; 2020 | <a href="https://github.com/ocelotsloth">Github</a> | <a href="https://unsplash.com/ocelotsloth">Unsplash</a>
   
   </footer>
   </body>
