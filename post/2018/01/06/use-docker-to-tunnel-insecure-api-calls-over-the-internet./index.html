@@ -44,23 +44,23 @@
 <p>The easiest way to use this is by creating a docker-compose file which orchestrates this with your other applications. This is especially useful if your other applications are run through docker, as you can get away with only exposing the tunneled port to the internal docker network.</p>
 <p>Here is what that docker-compose file could look like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#75715e"># docker-compose.yml</span>
-<span style="color:#66d9ef">version</span>: <span style="color:#e6db74">&#39;2&#39;</span>
-<span style="color:#66d9ef">services</span>:
-  <span style="color:#66d9ef">proxy</span>:
-    <span style="color:#66d9ef">image</span>: <span style="color:#e6db74">&#39;ocelotsloth/ssh-tunnel:v0.1.0&#39;</span>
-    <span style="color:#66d9ef">environment</span>:
-      - SSH_PASS=${PROXY_SSH_PASS}
-      - SSH_URL=${PROXY_SSH_URL}
-      - SSH_PORT=${PROXY_SSH_PORT}
-      - SSH_USER=${PROXY_SSH_USER}
-      - REMOTE_PROXY_PORT=${PROXY_REMOTE_PROXY_PORT}
-      - REMOTE_HOST=${PROXY_REMOTE_HOST}
-      - LOCAL_PROXY_PORT=${PROXY_LOCAL_PROXY_PORT}
-    <span style="color:#66d9ef">expose</span>:
+<span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;2&#39;</span>
+<span style="color:#f92672">services</span>:
+  <span style="color:#f92672">proxy</span>:
+    <span style="color:#f92672">image</span>: <span style="color:#e6db74">&#39;ocelotsloth/ssh-tunnel:v0.1.0&#39;</span>
+    <span style="color:#f92672">environment</span>:
+      - <span style="color:#ae81ff">SSH_PASS=${PROXY_SSH_PASS}</span>
+      - <span style="color:#ae81ff">SSH_URL=${PROXY_SSH_URL}</span>
+      - <span style="color:#ae81ff">SSH_PORT=${PROXY_SSH_PORT}</span>
+      - <span style="color:#ae81ff">SSH_USER=${PROXY_SSH_USER}</span>
+      - <span style="color:#ae81ff">REMOTE_PROXY_PORT=${PROXY_REMOTE_PROXY_PORT}</span>
+      - <span style="color:#ae81ff">REMOTE_HOST=${PROXY_REMOTE_HOST}</span>
+      - <span style="color:#ae81ff">LOCAL_PROXY_PORT=${PROXY_LOCAL_PROXY_PORT}</span>
+    <span style="color:#f92672">expose</span>:
       - <span style="color:#e6db74">&#34;${PROXY_LOCAL_PROXY_PORT}:${PROXY_LOCAL_PROXY_PORT}&#34;</span>
-    <span style="color:#66d9ef">ports</span>:
+    <span style="color:#f92672">ports</span>:
       - <span style="color:#e6db74">&#34;${PROXY_LOCAL_PROXY_PORT}:${PROXY_LOCAL_PROXY_PORT}&#34;</span>
-    <span style="color:#66d9ef">restart</span>: always
+    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
 </code></pre></div><p>With this file, a simple <code>docker-compose up -d</code> would bring up the proxy and configure it to restart (the same way enabling a systemd unit works). You will need the following <code>.env</code> file in the same directory as the docker-compose file to pass the configuration values. Alternatively you could just enter them directly.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">PROXY_SSH_PASS<span style="color:#f92672">=</span>
 PROXY_SSH_URL<span style="color:#f92672">=</span>

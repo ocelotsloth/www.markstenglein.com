@@ -6,11 +6,7 @@
     <description>Recent content in Categories on Stenglein Projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.markstenglein.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.markstenglein.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Portfolio</title>
       <link>https://www.markstenglein.com/categories/portfolio/</link>
