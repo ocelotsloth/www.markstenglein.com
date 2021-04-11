@@ -1,194 +1,118 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://www.markstenglein.com/categories/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/green-machine/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/portfolio/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/categories/portfolio/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/post/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/post/2019/08/28/recruitment-video-for-gmus-green-machine./</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/videography/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/categories/videography/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/categories/development/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/docker/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/programming/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/ssh/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/categories/systems-administration/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/post/2018/01/06/use-docker-to-tunnel-insecure-api-calls-over-the-internet./</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/post/2017/12/18/ultra-disposable-testing-environments-with-docker/</loc>
     <lastmod>2017-12-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/post/2016/07/11/how-to-create-sharepoint-popups-for-new-item-forms/</loc>
     <lastmod>2016-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/html/</loc>
     <lastmod>2016-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/javascript/</loc>
     <lastmod>2016-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/microsoft/</loc>
     <lastmod>2016-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/sharepoint/</loc>
     <lastmod>2016-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/xhtml/</loc>
     <lastmod>2016-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/post/2016/06/22/a-visit-to-nasa-larcs-hanger/</loc>
     <lastmod>2016-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/aviation/</loc>
     <lastmod>2016-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/hanger/</loc>
     <lastmod>2016-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/nasa/</loc>
     <lastmod>2016-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/categories/photography/</loc>
     <lastmod>2016-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/arduino/</loc>
     <lastmod>2016-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/diy/</loc>
     <lastmod>2016-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/categories/diy/</loc>
     <lastmod>2016-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/post/2016/05/11/diy-musical-floppy-drives/</loc>
     <lastmod>2016-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/floppy-drives/</loc>
     <lastmod>2016-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/midi/</loc>
     <lastmod>2016-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/tags/music/</loc>
     <lastmod>2016-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/categories/projects/</loc>
     <lastmod>2016-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/post/2016/05/09/diy-laser-engraver-for-80-usd/</loc>
     <lastmod>2016-05-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.markstenglein.com/about/</loc>
   </url>
-  
 </urlset>
