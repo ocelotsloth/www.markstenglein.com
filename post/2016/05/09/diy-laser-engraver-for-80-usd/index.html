@@ -44,17 +44,15 @@
 <p>The <a href="http://reprap.org/wiki/Main_Page">RepRap Project</a> ended up being the most important source of information. Even though I was building a laser engraver, I was still going to use <a href="https://github.com/grbl/grbl">grbl</a> running on an Arduino Nano as the controller.</p>
 <h2 id="construction">Construction</h2>
 <p>For the laser, I found a DVD-RW drive and harvested the laser diode from it. There are many different videos on YouTube explaining this process, just make sure you use proper ESD safety to avoid breaking the diode, as it is very sensitive. I then bought an Aixiz module to house it and a constant current driver for power. It is important to use a constant current driver as any other source will blow out the diode almost instantly.</p>
-<figure>
-    <img src="/img/engraver/diode.jpg"
-         alt="Laser diode with penny for scale."/> <figcaption>
+<figure><img src="/img/engraver/diode.jpg"
+         alt="Laser diode with penny for scale."/><figcaption>
             <p>Laser diode with penny for scale.</p>
         </figcaption>
 </figure>
 
 <p>Moving on to the electronics, I ended up using one Arduino Nano, two <a href="http://www.schmalzhaus.com/EasyDriver/">Easy Drivers</a>, two laser end stops, and a relay to power the laser from the Arduino with. Here is the circuit on breadboard. All the pinouts are identical to default grbl settings with the exception of the laser, which is on the feed enable pin (also documented at grbl’s website).</p>
-<figure>
-    <img src="/img/engraver/breadboardCircuit1.jpg"
-         alt="The initial cercuit before mibration to perfboard."/> <figcaption>
+<figure><img src="/img/engraver/breadboardCircuit1.jpg"
+         alt="The initial cercuit before mibration to perfboard."/><figcaption>
             <p>The initial cercuit before mibration to perfboard.</p>
         </figcaption>
 </figure>
@@ -67,24 +65,21 @@
 </div>
 </figure>
 <p>This ended up working really well actually, as it provided a really nice way for me to mount the laser diode on the CD drive parts. I am able to focus the laser by hard focusing it at its lowest position and then sliding it upwards as high as the material stands on the bed surface.</p>
-<figure>
-    <img src="/img/engraver/initialGantryDesign.jpg"
-         alt="The initial design for the gantry. This changed by the end of it all."/> <figcaption>
+<figure><img src="/img/engraver/initialGantryDesign.jpg"
+         alt="The initial design for the gantry. This changed by the end of it all."/><figcaption>
             <p>The initial design for the gantry. This changed by the end of it all.</p>
         </figcaption>
 </figure>
 
-<figure>
-    <img src="/img/engraver/strippedScanner.jpg"
-         alt="The scanner stripped down and ready to be turned into an axis of motion."/> <figcaption>
+<figure><img src="/img/engraver/strippedScanner.jpg"
+         alt="The scanner stripped down and ready to be turned into an axis of motion."/><figcaption>
             <p>The scanner stripped down and ready to be turned into an axis of motion.</p>
         </figcaption>
 </figure>
 
 <p>Which leads me to the final product!</p>
-<figure>
-    <img src="/img/engraver/finalEngraver.jpg"
-         alt="The final engraver."/> <figcaption>
+<figure><img src="/img/engraver/finalEngraver.jpg"
+         alt="The final engraver."/><figcaption>
             <p>The final engraver.</p>
         </figcaption>
 </figure>
@@ -93,16 +88,14 @@
 <p>There are some things that are really important to note about this project from a safety perspective. First, I have yet to build a proper guard around the laser. This is problematic because a 500mW laser it can and will blind somebody in an instant if they are exposed to it directly and can still have equally harmful effects from incident reflections. Safety glasses (the laser kind) are a must and I will be building a ventilated shroud to go over the entire machine while in operation. That said, it can produce some really nice looking work when used correctly.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>In the end I was actually able to create this machine for far less than the cost of buying one new. It isn’t nearly as accurate as a properly made machine but it still does a consistently decent job. Here are a couple samples:</p>
-<figure>
-    <img src="/img/engraver/ship2.jpg"
-         alt="A ship being engraved into a piece of balsa wood."/> <figcaption>
+<figure><img src="/img/engraver/ship2.jpg"
+         alt="A ship being engraved into a piece of balsa wood."/><figcaption>
             <p>A ship being engraved into a piece of balsa wood.</p>
         </figcaption>
 </figure>
 
-<figure>
-    <img src="/img/engraver/ship1.jpg"
-         alt="The same ship, nearly completed."/> <figcaption>
+<figure><img src="/img/engraver/ship1.jpg"
+         alt="The same ship, nearly completed."/><figcaption>
             <p>The same ship, nearly completed.</p>
         </figcaption>
 </figure>
@@ -113,9 +106,25 @@
 
   <footer>
   
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://mt.markstenglein.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+
   
   <hr/>
-  © <a href="https://www.markstenglein.com">Mark Stenglein</a> 2016 &ndash; 2020 | <a href="https://github.com/ocelotsloth">Github</a> | <a href="https://unsplash.com/ocelotsloth">Unsplash</a>
+  © <a href="https://www.markstenglein.com">Mark Stenglein</a> 2016 &ndash; 2021 | <a href="https://github.com/ocelotsloth">Github</a> | <a href="https://unsplash.com/ocelotsloth">Unsplash</a>
   
   </footer>
   </body>
